@@ -6,6 +6,9 @@ Projeto desenvolvido para o Tech Challenge da Fase 4 da Pós Tech em Machine Lea
 ## Descrição
 Modelo preditivo de deep learning utilizando redes neurais LSTM para prever o preço de fechamento da ação PETR4 (Petrobras) na bolsa de valores brasileira, com base em dados históricos de janeiro de 2018 a dezembro de 2024.
 
+## Por que LSTM?
+RNNs tradicionais sofrem do problema do vanishing gradient, os gradientes diminuem tanto durante o treinamento que a rede para de aprender dependências de longo prazo. O LSTM resolve isso com mecanismos de portas (gates) que controlam o que deve ser lembrado ou esquecido. O modelo é treinado via Backpropagation Through Time (BPTT), técnica específica para redes recorrentes que desenrola a rede no tempo para calcular os gradientes.
+
 ## Resultados do Modelo
 - MAE: R$ 1.21
 - RMSE: R$ 1.32
